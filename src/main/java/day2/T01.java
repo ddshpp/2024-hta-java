@@ -1,6 +1,7 @@
 package day2;
 
 public class T01 {
+
     public static void main(String[] args) {
         System.out.println("아이고 졸리다");
 

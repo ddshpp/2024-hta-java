@@ -1,6 +1,7 @@
 package day2;
 
 public class DoCoffee {
+
     String name;
     int price;
 

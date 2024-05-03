@@ -1,6 +1,7 @@
 package day1;
 
 public class study2 {
+
     public static void main(String[] args) {
         testDivision();
         testOverflow();
