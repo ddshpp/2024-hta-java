@@ -1,6 +1,7 @@
 package day3.managementProgram;
 
 public class Staff {
+
     private final String company = "중앙HTA";
     private String name;
     private int age;

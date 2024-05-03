@@ -1,6 +1,7 @@
 package day2;
 
 public class T04 {
+
     public static void main(String[] args) {
 //        testVariable.getVariable();
 //        testVariable.getVariable2();
