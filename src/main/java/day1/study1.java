@@ -1,41 +1,20 @@
 package day1;
 
-public class Hello {
+public class study1 {
     public static void main(String[] args) {
-
-
-        //TODO : 1. print 해보기
-//        test1();
-
-        //TODO : 2. 변수선언, 바꾸기
-//        test2();
-
-        //TODO : 3. 상수선언, 변경시도
-//        test3();
-
-        //TODO : 4. 논리형변수 (boolean)
-//        test4();
-
-        //TODO : 5. 문자와 문자열 (char, String)
-//        test5();
-
-        //TODO : 6. 정수형 (byte, short, int, long)
-//        test6();
-
-        //TODO : 7. 실수형 (float, double)
-//        test7();
-
-        //TODO : 8. 지수(e)
-//        test8();
-
-        //TODO : 9. 형변환
-//        test9();
-
-        //TODO : 10. char
-//        test10();
+        printTest();
+        createVariable();
+        createConstant();
+        testBoolean();
+        testString();
+        testInteger();
+        testRealNumber();
+        testExponent();
+        testTypeConversion();
+        testChar();
     }
 
-    private static void test10() {
+    private static void testChar() {
         char char1 = 'a';
         char char2 = 'b';
         char char3 = 3;
@@ -50,7 +29,7 @@ public class Hello {
         System.out.println("8.  (char)('a' + 3)  = " + (char) (char1 + char3));
     }
 
-    private static void test9() {
+    private static void testTypeConversion() {
         int int1 = 10;
         long long1 = int1;
         long long2 = 10L;
@@ -61,14 +40,14 @@ public class Hello {
         System.out.println("(int) long2 : " + int2);
     }
 
-    private static void test8() {
+    private static void testExponent() {
         double double1 = 2.0e2;
         double double2 = 2e3;
         System.out.println(double1);
         System.out.println(double2);
     }
 
-    private static void test7() {
+    private static void testRealNumber() {
         int int1 = 1;
         double double1 = 1;
         double double2 = 2;
@@ -82,7 +61,7 @@ public class Hello {
         System.out.println("5.5 + 4.0 : " + (double5 + double4));
     }
 
-    private static void test6() {
+    private static void testInteger() {
         byte byte1 = 1;
         byte byte2 = Byte.MIN_VALUE;
         byte byte3 = Byte.MAX_VALUE;
@@ -112,7 +91,7 @@ public class Hello {
         System.out.println("long3 = Long.MAX_VALUE : " + long3);
     }
 
-    private static void test5() {
+    private static void testString() {
         char a = 'a';
         char b = 'b';
         String c = "c";
@@ -125,14 +104,14 @@ public class Hello {
         System.out.println("c + d : " + (c + d));
     }
 
-    private static void test4() {
+    private static void testBoolean() {
         boolean boolean1 = true;
         boolean boolean2 = false;
         System.out.println(boolean1);
         System.out.println(boolean2);
     }
 
-    private static void test3() {
+    private static void createConstant() {
         final int NUMBER1;
         NUMBER1 = 10;
         System.out.println(NUMBER1);
@@ -140,7 +119,7 @@ public class Hello {
 //        System.out.println(NUMBER1);
     }
 
-    private static void test2() {
+    private static void createVariable() {
         int a = 10;
         int b = 20;
 
@@ -156,7 +135,7 @@ public class Hello {
         System.out.println("잘 바뀌죠~?");
     }
 
-    private static void test1() {
+    private static void printTest() {
         System.out.println("첫번째 출력 : Hello World!");
         System.out.printf("%s%s%s\n", "두번째 출력 : ", 100, 1000);
         System.out.printf("%s\t%s\n%s%s\n", "세번째 출력-1 : ", 100, "세번째 출력-2 : ", 1000);

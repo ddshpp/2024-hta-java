@@ -2,30 +2,30 @@ package day1;
 
 import java.util.Scanner;
 
-public class Hello3 {
+public class study3 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //TODO : 점수 입력받아 성적출력하기 (if else)
-//        String result = test1();
-//        System.out.println(result);
+        //점수 입력받아 성적출력하기 (if else)
+        String result = test1();
+        System.out.println(result);
 
-        //TODO : 점수 입력받아 성적출력하기 (switch)
-//        String result2 = test2();
-//        System.out.println(result2);
+        //점수 입력받아 성적출력하기 (switch)
+        String result2 = test2();
+        System.out.println(result2);
 
-//        TODO : 월 입력받아 계절출력하기
-//        String result3 = test3();
-//        System.out.println(result3);
+        //월 입력받아 계절출력하기
+        String result3 = test3();
+        System.out.println(result3);
 
-        //TODO : 반복문 for -1
-//        test4();
+        //반복문
+        test4();
 
-        //TODO : 별찍기
-//        star1();
-//        star2();
+        //별찍기
+        star1();
+        star2();
 
-        //TODO : 알파벳찍기 (char)
+        //알파벳 찍기
         test5();
     }
 

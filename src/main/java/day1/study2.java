@@ -1,18 +1,13 @@
 package day1;
 
-public class Hello2 {
+public class study2 {
     public static void main(String[] args) {
-        //TODO : 1. 나머지, 몫
-//        test1();
-
-        //TODO : 사칙연산과 오버플로우
-//        test2();
-
-        //TODO : 논리연산자
-//        test3();
+        testDivision();
+        testOverflow();
+        testBoolean();
     }
 
-    private static void test3() {
+    private static void testBoolean() {
         boolean boolean1 = true;
         boolean boolean2 = false;
 
@@ -22,7 +17,7 @@ public class Hello2 {
         System.out.println("!(boolean2) : " + !boolean2);
     }
 
-    private static void test2() {
+    private static void testOverflow() {
         int a = 1000000;
         int b = 2000000;
         long c = 2000000;
@@ -41,7 +36,7 @@ public class Hello2 {
         System.out.println("long result4 = a * c : " + result4);
     }
 
-    private static void test1() {
+    private static void testDivision() {
         System.out.println("하이하이!!");
 
         int number1 = 30;
