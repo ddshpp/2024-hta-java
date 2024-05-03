@@ -1,7 +1,6 @@
 package day1;
 
 public class study1 {
-
     public static void main(String[] args) {
         printTest();
         createVariable();

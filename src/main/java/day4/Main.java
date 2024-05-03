@@ -3,7 +3,6 @@ package day4;
 import view.Message;
 
 public class Main {
-
     public static void main(String[] args) {
 //        test01();
         Message.hello();

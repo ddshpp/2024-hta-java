@@ -1,7 +1,6 @@
 package day2;
 
 public class T02 {
-
     public static void main(String[] args) {
         Student student1 = new Student("최익현", 1, 16, 230, 110);
         Student student2 = new Student("최익현", 1, 16, 230, 110);

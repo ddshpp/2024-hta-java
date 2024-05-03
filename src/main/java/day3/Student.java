@@ -1,7 +1,6 @@
 package day3;
 
 public class Student {
-
     private final String lineSeparator = System.lineSeparator();
     private final String name;
     private final int ban;

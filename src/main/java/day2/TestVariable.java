@@ -1,7 +1,6 @@
 package day2;
 
 public class TestVariable {
-
     static String str1;
     static int int1;
     static Long long1;

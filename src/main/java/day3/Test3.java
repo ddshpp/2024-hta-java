@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Test3 {
-
     public static void main(String[] args) {
         Student student1 = new Student("최익현", 1, 1, 70, 60, 80);
         Student student2 = new Student("흰수염", 1, 2, 30, 80, 10);

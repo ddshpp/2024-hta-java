@@ -1,7 +1,6 @@
 package day3;
 
 public class T04 {
-
     public static void main(String[] args) {
         T05 t050 = new T05();
         T05 t051 = new T05();

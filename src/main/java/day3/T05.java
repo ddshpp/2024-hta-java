@@ -1,7 +1,6 @@
 package day3;
 
 public class T05 {
-
     int testInt1 = 100;
     int testInt2;
     static int testInt3 = 333;
