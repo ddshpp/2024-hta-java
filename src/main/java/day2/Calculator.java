@@ -1,4 +1,4 @@
-package java0430;
+package day2;
 
 public class Calculator {
 

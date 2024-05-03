@@ -1,4 +1,4 @@
-package java0503;
+package day4;
 
 public class First {
     public void test01() {

@@ -1,4 +1,4 @@
-package java0502_2;
+package day3.managementProgram;
 
 public class Company {
     public static void main(String[] args) {

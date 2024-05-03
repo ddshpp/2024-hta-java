@@ -1,6 +1,4 @@
-package java0430;
-
-import org.w3c.dom.ls.LSOutput;
+package day2;
 
 public class TestVariable {
     static String str1;

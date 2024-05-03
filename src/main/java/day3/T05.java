@@ -1,4 +1,4 @@
-package java0502;
+package day3;
 
 public class T05 {
     int testInt1 = 100;

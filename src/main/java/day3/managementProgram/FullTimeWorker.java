@@ -1,4 +1,4 @@
-package java0502_2;
+package day3.managementProgram;
 
 public class FullTimeWorker extends Staff {
     private final String TYPE_OF_WORK = "정규직";

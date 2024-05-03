@@ -1,4 +1,4 @@
-package java0430;
+package day2;
 
 public class T01 {
     public static void main(String[] args) {

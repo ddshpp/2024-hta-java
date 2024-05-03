@@ -1,4 +1,4 @@
-package java0502_2;
+package day3.managementProgram;
 
 public class Staff {
     private final String company = "중앙HTA";
