@@ -1,8 +1,8 @@
-package day3.managementProgram;
+package day3.management;
 
 public class FullTimeWorker extends Staff {
 
-    private final String TYPE_OF_WORK = "정규직";
+    final String TYPE_OF_WORK = "정규직";
 
     FullTimeWorker(String name, int age, String address) {
         setName(name);
@@ -12,14 +12,14 @@ public class FullTimeWorker extends Staff {
     }
 
     public void getInfo() {
-        System.out.println("nama : " + getName());
+        System.out.println("name : " + getName());
         System.out.println("age : " + getAge());
         System.out.println("address : " + getAddress());
         System.out.println("typeOfWork : " + getTypeOfWork());
     }
 
     @Override
-    public void test11() {
+    public void overrideTest() {
         System.out.println("오버라이딩 완료");
     }
 
