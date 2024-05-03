@@ -1,35 +1,25 @@
 package day2;
 
-public class T01 {
+public class Study1 {
 
     public static void main(String[] args) {
-        System.out.println("아이고 졸리다");
-
-        //TODO : 배열의 생성
-        test01();
-
-        // TODO : 점수 합,평균
-        test02();
-
-        // TODO : 최댓값,최솟값 찾기
-        test03();
-
-        // TODO : 문자열 배열
-        test04();
-
-        // TODO : 2차원 배열
-        test05();
-
-        // TODO : 객체 테스트
-        DoCoffee doCoffee = new DoCoffee("초록이", 1000);
-        System.out.println(doCoffee.getName());
-        System.out.println(doCoffee.getPrice());
-        doCoffee.dododo();
-        doCoffee.dododo2();
-
+        createArray();
+        calculator();
+        findMaxValueMinValue();
+        testStringArray();
+        testTwoDimensionArray();
+        testObject();
     }
 
-    private static void test05() {
+    private static void testObject() {
+        Coffee coffee1 = new Coffee("강력한아메리카노", 1000);
+        System.out.println(coffee1.getName());
+        System.out.println(coffee1.getPrice());
+        coffee1.hello();
+        coffee1.hello2();
+    }
+
+    private static void testTwoDimensionArray() {
         String[][] arr = new String[3][3];
 
         for (int i = 0; i < arr.length; i++) {
@@ -38,21 +28,21 @@ public class T01 {
             }
         }
 
-        for (int i = 0; i < arr.length; i++) {
-            for (String str : arr[i]) {
+        for (String[] strings : arr) {
+            for (String str : strings) {
                 System.out.println(str);
             }
         }
     }
 
-    private static void test04() {
+    private static void testStringArray() {
         String[] array04 = {"아이고", "아이구", "어이고"};
         for (String str : array04) {
             System.out.println(str);
         }
     }
 
-    private static void test03() {
+    private static void findMaxValueMinValue() {
         int[] array03 = {100, 2, 3, 4, 5, 6, 6, 77, 888, 10, 2132};
         int min = array03[0];
         int minIndex = 0;
@@ -76,7 +66,7 @@ public class T01 {
         System.out.println("maxIndex : " + maxIndex);
     }
 
-    private static void test02() {
+    private static void calculator() {
         int[] score = {100, 88, 100, 100, 90};
         int sum = 0;
         double average = 0.0;
@@ -85,12 +75,12 @@ public class T01 {
             sum += i;
         }
 
-        average = (double) (sum / score.length);
+        average = (double) sum / score.length;
         System.out.println("총 점수 : " + sum);
         System.out.println("평균 점수 : " + average);
     }
 
-    private static void test01() {
+    private static void createArray() {
         // 1번
         int[] array01 = new int[3];
         array01[0] = 1;
