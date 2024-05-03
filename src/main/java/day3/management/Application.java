@@ -1,6 +1,6 @@
 package day3.management;
 
-public class Company {
+public class Application {
 
     public static void main(String[] args) {
         FullTimeWorker staff1 = new FullTimeWorker("흰수염", 77, "사우스블루");

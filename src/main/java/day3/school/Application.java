@@ -1,9 +1,9 @@
-package day3;
+package day3.school;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test3 {
+public class Application {
 
     public static void main(String[] args) {
         Student student1 = new Student("최익현", 1, 1, 70, 60, 80);

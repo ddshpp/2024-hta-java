@@ -1,4 +1,4 @@
-package day3;
+package day3.strong;
 
 public class StrongMan {
 
@@ -15,11 +15,6 @@ public class StrongMan {
         this.power = power;
         this.speed = speed;
     }
-
-    StrongMan() {
-
-    }
-
 
     public void getInfo() {
         System.out.println(

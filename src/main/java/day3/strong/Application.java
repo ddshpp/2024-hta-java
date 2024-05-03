@@ -1,6 +1,6 @@
-package day3;
+package day3.strong;
 
-public class Test1 {
+public class Application {
 
     public static void main(String[] args) {
         StrongMan strongMan1 = new StrongMan("이순신", 150, 180000, 22000, 1500);
