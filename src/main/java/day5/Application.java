@@ -17,6 +17,14 @@ public class Application {
         stringTypeValueToString();
         toStringOverride();
         stringEqualsTest();
+        instanceEqualsTest();
+    }
+
+    private static void instanceEqualsTest() {
+        InstanceTest instanceTest1 = new InstanceTest("테스트", 1, 1);
+        InstanceTest instanceTest2 = new InstanceTest("테스트", 1, 1);
+        System.out.println(instanceTest1 == instanceTest2);
+        System.out.println(instanceTest1.equals(instanceTest2));
     }
 
     private static void stringEqualsTest() {
