@@ -15,5 +15,5 @@ JAVA 5일차
 2. Object Class
    1. toString
    2. equals
-3. String
-   4. 여러 메소드들 
+3. String, StringBuffer, StringBuilder
+4. Math
