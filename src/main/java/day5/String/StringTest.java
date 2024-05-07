@@ -5,14 +5,18 @@ public class StringTest {
     public static void main(String[] args) {
         createString();
         stringEqualsTest1();
-        stringLength();
-
-
+        stringTest1();
     }
 
-    private static void stringLength() {
-        String string1 = "아이고아이고~~~";
+    private static void stringTest1() {
+        String string1 = "   스트링 클래스의 여러 메소드~~~   테스트~~~";
+        System.out.println(string1);
         System.out.println(string1.length());
+        System.out.println(string1.trim());
+        System.out.println(string1.strip());
+        System.out.println(string1.charAt(7));
+        String[] split = string1.split(" ");
+        System.out.println(split[3]);
     }
 
     private static void stringEqualsTest1() {
