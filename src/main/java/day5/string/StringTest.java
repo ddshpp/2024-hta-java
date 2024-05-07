@@ -1,4 +1,4 @@
-package day5.String;
+package day5.string;
 
 public class StringTest {
 

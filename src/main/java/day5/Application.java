@@ -1,6 +1,6 @@
 package day5;
 
-import day5.Exception.ExceptionTest;
+import day5.exception.ExceptionTest;
 
 public class Application {
 

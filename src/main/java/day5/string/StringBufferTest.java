@@ -1,4 +1,4 @@
-package day5.String;
+package day5.string;
 
 public class StringBufferTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day5.Exception;
+package day5.exception;
 
 public enum ShpExceptionCode {
     SHP_EXCEPTION_CODE_1 ("첫번째 예외", 1001);

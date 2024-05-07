@@ -1,4 +1,4 @@
-package day5.Exception;
+package day5.exception;
 
 public class ShpException extends RuntimeException {
 
