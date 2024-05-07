@@ -25,7 +25,7 @@ public class Study2 {
 
         int result1 = a * b;
         long result2 = (long) a * b;
-        long result3 = a * b;
+        long result3 = (long) a * b;
         long result4 = a * c;
         System.out.println("int a = 1000000");
         System.out.println("int b = 2000000");

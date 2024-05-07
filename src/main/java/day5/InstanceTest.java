@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class InstanceTest {
 
-    private String name;
-    private int age;
-    private int power;
+    private final String name;
+    private final int age;
+    private final int power;
 
     public InstanceTest(String name, int age, int power) {
         this.name = name;

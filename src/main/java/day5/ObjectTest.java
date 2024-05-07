@@ -7,7 +7,7 @@ public class ObjectTest {
     public static void main(String[] args) {
         Object object1 = new Object();
         System.out.println(object1);
-        System.out.println(object1.toString());
+        System.out.println(object1);
         System.out.println(object1.getClass());
         System.out.println(object1.getClass().getName());
         System.out.println(object1.hashCode());

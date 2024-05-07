@@ -31,8 +31,8 @@ public class Application {
         int number1 = 10;
         int number2 = 10;
         int number3 = 20;
-        String string1 = new String("String");
-        String string2 = new String("String");
+        String string1 = "String";
+        String string2 = "String";
 
         System.out.println(number1 == number2);
         System.out.println(number1 == number3);
@@ -47,7 +47,7 @@ public class Application {
     }
 
     private static void stringTypeValueToString() {
-        String string1 = new String("toString 테스트중");
+        String string1 = "toString 테스트중";
         System.out.println(string1);
         System.out.println(string1.hashCode());
     }
