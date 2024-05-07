@@ -1,7 +1,5 @@
-package day5;
+package day5.Exception;
 
-import day5.Exception.ShpException;
-import day5.Exception.ShpExceptionCode;
 import java.util.Scanner;
 
 public class ExceptionTest {

@@ -1,5 +1,7 @@
 package day5;
 
+import day5.Exception.ExceptionTest;
+
 public class ObjectTest {
 
     public static void main(String[] args) {
@@ -12,5 +14,9 @@ public class ObjectTest {
 
         int number1 = Integer.parseInt("7ad041f3", 16);
         System.out.println(number1);
+
+        ExceptionTest exceptionTest = new ExceptionTest();
+        System.out.println(exceptionTest);
+        System.out.println(exceptionTest.hashCode());
     }
 }
