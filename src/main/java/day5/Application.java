@@ -16,6 +16,20 @@ public class Application {
 
         stringTypeValueToString();
         toStringOverride();
+        stringEqualsTest();
+    }
+
+    private static void stringEqualsTest() {
+        int number1 = 10;
+        int number2 = 10;
+        int number3 = 20;
+        String string1 = new String("String");
+        String string2 = new String("String");
+
+        System.out.println(number1 == number2);
+        System.out.println(number1 == number3);
+        System.out.println(string1 == string2);
+        System.out.println(string1.equals(string2));
     }
 
     public static void toStringOverride() {
