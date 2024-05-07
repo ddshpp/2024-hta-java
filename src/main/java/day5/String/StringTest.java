@@ -6,6 +6,8 @@ public class StringTest {
         createString();
         stringEqualsTest1();
         stringLength();
+
+
     }
 
     private static void stringLength() {
