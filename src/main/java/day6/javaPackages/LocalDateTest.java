@@ -1,16 +1,32 @@
-package day6.util;
+package day6.javaPackages;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.Scanner;
 
-public class Application {
+public class LocalDateTest {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 //        scanner();
 //        localDate();
-        splitLocalDate();
+//        splitLocalDate();
+        testLocalDateMethod();
+    }
 
+    private static void testLocalDateMethod() {
+        LocalDate localDate = LocalDate.now();
+        int year = localDate.getYear();
+        Month month = localDate.getMonth();
+        int day = localDate.getDayOfMonth();
+        DayOfWeek dayOfWeek = localDate.getDayOfWeek();
+
+        System.out.println(year + " " + month + " " + day);
+        System.out.println("dayOfWeek : " + dayOfWeek);
+
+        int lengthOfMonth = localDate.lengthOfMonth();
+        System.out.println("lengthOfMonth : " + lengthOfMonth);
     }
 
     private static void splitLocalDate() {
