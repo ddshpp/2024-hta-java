@@ -48,8 +48,14 @@ public class Validate {
     public static void numberCheck(String input) {
         String[] splits = input.split("-");
 
-        String birthday = splits[0];
+        try {
+           int first = Integer.parseInt(splits[0]);
+           int second = Integer.parseInt(splits[1]);
+        }catch (Exception e) {
+            throw new RuntimeException("숫자로 입력해주세요");
+        }
 
+        String birthday = splits[0];
         birthdayCheck(birthday, splits);
 
         System.out.println("올바른 형식으로 입력하였습니다");
