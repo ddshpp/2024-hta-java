@@ -6,7 +6,6 @@ public class TimeTest {
     public static void main(String[] args) {
         System.out.println("하이하이");
 
-        //timestamp - 밀리세컨드
         System.out.println(System.nanoTime());
         System.out.println(System.currentTimeMillis());
 
