@@ -17,5 +17,7 @@ public class ArraysTest {
         System.out.println(Arrays.toString(intArray));
         Arrays.sort(intArray);
         System.out.println(Arrays.toString(intArray));
+        int binarySearchIndex = Arrays.binarySearch(intArray, 3);
+        System.out.println("binarySearchIndex : " + binarySearchIndex);
     }
 }
