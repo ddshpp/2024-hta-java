@@ -10,7 +10,5 @@ public class ProcessBuilderTest {
 
         ProcessBuilder processBuilderTest2 = new ProcessBuilder("/Applications/KakaoTalk.app/Contents/MacOS/KakaoTalk");
 //        processBuilderTest2.start();
-
-        System.out.println("ㅇㅇ");
     }
 }

@@ -1,6 +1,5 @@
-package day6.javaPackages;
+package day6.localDate;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class DateTest {

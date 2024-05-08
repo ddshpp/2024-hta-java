@@ -1,4 +1,4 @@
-package day6.javaPackages;
+package day6.localDate;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
