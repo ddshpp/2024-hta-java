@@ -1,4 +1,4 @@
-package day6;
+package day6.packageTest;
 
 import java.util.Arrays;
 

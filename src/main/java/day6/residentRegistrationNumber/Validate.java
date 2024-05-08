@@ -49,9 +49,9 @@ public class Validate {
         String[] splits = input.split("-");
 
         try {
-           int first = Integer.parseInt(splits[0]);
-           int second = Integer.parseInt(splits[1]);
-        }catch (Exception e) {
+            int first = Integer.parseInt(splits[0]);
+            int second = Integer.parseInt(splits[1]);
+        } catch (Exception e) {
             throw new RuntimeException("숫자로 입력해주세요");
         }
 

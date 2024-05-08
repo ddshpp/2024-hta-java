@@ -1,4 +1,4 @@
-package day6;
+package day6.packageTest;
 
 import java.time.LocalDate;
 
@@ -14,6 +14,6 @@ public class TimeTest {
 
         long nanoTime1 = System.nanoTime();
         long nanoTime2 = System.nanoTime();
-        System.out.println(nanoTime2-nanoTime1);
+        System.out.println(nanoTime2 - nanoTime1);
     }
 }

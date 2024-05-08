@@ -1,4 +1,4 @@
-package day6;
+package day6.packageTest;
 
 public class SystemClassTest {
     public static void main(String[] args) {

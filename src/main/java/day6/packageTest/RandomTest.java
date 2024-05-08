@@ -1,4 +1,4 @@
-package day6;
+package day6.packageTest;
 
 import java.util.Random;
 
@@ -8,6 +8,6 @@ public class RandomTest {
 
         System.out.println(random.nextInt(10));
         System.out.println(random.nextInt(10));
-        System.out.println(random.nextInt(45)+1);
+        System.out.println(random.nextInt(45) + 1);
     }
 }

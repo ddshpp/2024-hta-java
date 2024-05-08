@@ -1,8 +1,8 @@
-package day6.stringTokenizerTest;
+package day6.packageTest;
 
 import java.util.StringTokenizer;
 
-public class Application {
+public class StringTokenizerTest {
     public static void main(String[] args) {
         System.out.println("하이하이!");
 
