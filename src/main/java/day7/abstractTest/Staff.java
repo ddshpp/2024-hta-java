@@ -1,4 +1,4 @@
-package day7.abstraction;
+package day7.abstractTest;
 
 abstract class Staff {
     abstract void hello();

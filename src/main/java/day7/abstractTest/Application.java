@@ -1,4 +1,4 @@
-package day7.abstraction;
+package day7.abstractTest;
 
 public class Application {
     public static void main(String[] args) {
