@@ -1,5 +1,6 @@
 package day7.abstraction;
 
-abstract class Company {
+abstract class Staff {
     abstract void hello();
+    abstract void exitCompany();
 }

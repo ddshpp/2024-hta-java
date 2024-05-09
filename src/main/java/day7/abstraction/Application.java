@@ -7,5 +7,8 @@ public class Application {
 
         fullTimeStaff1.hello();
         partTimeStaff1.hello();
+
+        fullTimeStaff1.exitCompany();
+        partTimeStaff1.exitCompany();
     }
 }
