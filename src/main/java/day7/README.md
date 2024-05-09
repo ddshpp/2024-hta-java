@@ -13,4 +13,5 @@ JAVA 7일차
 3. 추상화
    1. 추상클래스
    2. 추상메소드
-3. Enum
+4. interface
+5. enum
