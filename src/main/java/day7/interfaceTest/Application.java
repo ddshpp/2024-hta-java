@@ -2,9 +2,17 @@ package day7.interfaceTest;
 
 public class Application {
     public static void main(String[] args) {
-        createObjectImplementsInterface();
-        interfaceConstantsTest();
-        implementsTest();
+//        createObjectImplementsInterface();
+//        interfaceConstantsTest();
+//        implementsTest();
+
+        defaultAndStaticMehodTest();
+    }
+
+    private static void defaultAndStaticMehodTest() {
+        StrongMan strongMan = new StrongMan();
+        strongMan.hello3();
+        interfaceTest2.hello4();
     }
 
     private static void implementsTest() {
