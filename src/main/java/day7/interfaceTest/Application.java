@@ -12,7 +12,7 @@ public class Application {
     private static void defaultAndStaticMehodTest() {
         StrongMan strongMan = new StrongMan();
         strongMan.hello3();
-        interfaceTest2.hello4();
+        InterfaceTest2.hello4();
     }
 
     private static void implementsTest() {
@@ -21,7 +21,7 @@ public class Application {
     }
 
     private static void interfaceConstantsTest() {
-        System.out.println(interfaceTest.name);
+        System.out.println(InterfaceTest.name);
     }
 
     private static void createObjectImplementsInterface() {
