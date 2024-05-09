@@ -18,7 +18,7 @@ public class Type1 {
     }
 
     public void testType1(){
-        System.out.println("타입1");
+        System.out.println("타입1타입1타입1");
     }
 
     public String getName() {

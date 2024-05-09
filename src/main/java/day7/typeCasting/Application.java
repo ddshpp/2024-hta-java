@@ -2,9 +2,9 @@ package day7.typeCasting;
 
 public class Application {
     public static void main(String[] args) {
-        createObject();
-        createInheritedObject();
-        upCasting();
+//        createObject();
+//        createInheritedObject();
+//        upCasting();
 //        downCasting();
         downCasting2();
     }

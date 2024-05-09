@@ -21,7 +21,7 @@ public class Type2 extends Type1 {
     }
 
     public void testType2(){
-        System.out.println("타입2");
+        System.out.println("타입2타입2타입2");
     }
 
     public int getHp() {
