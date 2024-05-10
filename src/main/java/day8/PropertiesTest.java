@@ -10,6 +10,7 @@ public class PropertiesTest {
 
         for (String key : properties.stringPropertyNames()) {
             System.out.println(key);
+            //테스트
         }
     }
 }
