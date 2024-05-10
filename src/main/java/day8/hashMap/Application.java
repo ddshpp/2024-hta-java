@@ -5,8 +5,20 @@ import java.util.Map;
 
 public class Application {
     public static void main(String[] args) {
-        mapPutTest();
-        mapRemoveTest();
+//        mapPutTest();
+//        mapRemoveTest();
+        printMapInfo();
+    }
+
+    private static void printMapInfo() {
+        Map<Integer, String> map = new HashMap<>();
+        for (int i = 0; i < 10; i++) {
+            map.put(i, String.valueOf(i) + "입니다");
+        }
+
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
     }
 
     private static void mapRemoveTest() {
