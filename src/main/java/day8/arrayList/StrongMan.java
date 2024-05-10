@@ -1,4 +1,4 @@
-package day8.list;
+package day8.arrayList;
 
 public class StrongMan {
     private String name;
