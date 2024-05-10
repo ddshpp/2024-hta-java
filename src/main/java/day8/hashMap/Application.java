@@ -5,10 +5,9 @@ import java.util.Map;
 
 public class Application {
     public static void main(String[] args) {
-//        mapPutTest();
-//        mapRemoveTest();
-//        printMapInfo();
-
+        mapPutTest();
+        mapRemoveTest();
+        printMapInfo();
         printMapInfo2("우히히!!!");
     }
 
