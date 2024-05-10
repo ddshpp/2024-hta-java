@@ -7,7 +7,21 @@ public class Application {
     public static void main(String[] args) {
 //        mapPutTest();
 //        mapRemoveTest();
-        printMapInfo();
+//        printMapInfo();
+
+        printMapInfo2("우히히!!!");
+    }
+
+    private static void printMapInfo2(String x) {
+        Map<Integer, String> map = new HashMap<>();
+
+        for (int i = 0; i < 10; i++) {
+            map.put(i, String.valueOf(i) + x);
+        }
+
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
     }
 
     private static void printMapInfo() {
