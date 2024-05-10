@@ -3,8 +3,8 @@ package day8.hashSet;
 import java.util.Objects;
 
 public class StrongMan {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public StrongMan(String name, int age) {
         this.name = name;
