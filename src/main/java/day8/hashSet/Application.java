@@ -9,9 +9,18 @@ import java.util.Set;
 
 public class Application {
     public static void main(String[] args) {
-        setAddTest();
-        printSetTest();
-        setSortTest();
+//        setAddTest();
+//        printSetTest();
+//        setSortTest();
+
+        hashSetRemoveDuplicateTest();
+    }
+
+    private static void hashSetRemoveDuplicateTest() {
+        Set<StrongMan> strongMans = new HashSet<>();
+        strongMans.add(new StrongMan("김동현", 16));
+        strongMans.add(new StrongMan("김동현", 16));
+        System.out.println(strongMans.size());
     }
 
     private static void setSortTest() {
