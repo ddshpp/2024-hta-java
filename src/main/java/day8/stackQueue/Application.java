@@ -1,4 +1,4 @@
-package day8.stack;
+package day8.stackQueue;
 
 import java.util.LinkedList;
 import java.util.Queue;
