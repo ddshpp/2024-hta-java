@@ -1,4 +1,4 @@
-package day8.HashSet;
+package day8.hashSet;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,9 +9,8 @@ import java.util.Set;
 
 public class Application {
     public static void main(String[] args) {
-//        setAddTest();
-//        printSetTest();
-
+        setAddTest();
+        printSetTest();
         setSortTest();
     }
 
