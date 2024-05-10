@@ -5,15 +5,37 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        arrayListAdd();
-        arrayListSize();
-        arrayListSet();
+//        arrayListAdd();
+//        arrayListSize();
+//        arrayListSet();
+//        otherTypeAddTest();
+
+        listTypeTest();
+    }
+
+    private static void listTypeTest() {
+        List<StrongMan> strongManList = new ArrayList<>();
+        strongManList.add(new StrongMan("강호동", 16, 3000));
+        strongManList.add(new StrongMan("김동현", 16, 2700));
+        strongManList.add(new StrongMan("현", 16, 100));
+
+        for (StrongMan strongMan : strongManList) {
+            strongMan.getInfo();
+        }
+    }
+
+    private static void otherTypeAddTest() {
+        ArrayList list = new ArrayList<>();
+        list.add("A");
+        list.add(1);
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
     }
 
     private static void arrayListSet() {
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("테스트");
-        arrayList.set(0,"테스트2");
+        arrayList.set(0, "테스트2");
         System.out.println(arrayList.get(0));
     }
 
