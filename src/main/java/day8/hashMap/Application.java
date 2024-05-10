@@ -6,6 +6,18 @@ import java.util.Map;
 public class Application {
     public static void main(String[] args) {
         mapPutTest();
+        mapRemoveTest();
+    }
+
+    private static void mapRemoveTest() {
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "테스트1");
+        map.put(2, "테스트2");
+        map.put(3, "테스트3");
+
+        System.out.println(map);
+        map.remove(2);
+        System.out.println(map);
     }
 
     private static void mapPutTest() {
