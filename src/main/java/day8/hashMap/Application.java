@@ -15,7 +15,7 @@ public class Application {
         Map<Integer, String> map = new HashMap<>();
 
         for (int i = 0; i < 10; i++) {
-            map.put(i, String.valueOf(i) + x);
+            map.put(i, i + x);
         }
 
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
@@ -26,7 +26,7 @@ public class Application {
     private static void printMapInfo() {
         Map<Integer, String> map = new HashMap<>();
         for (int i = 0; i < 10; i++) {
-            map.put(i, String.valueOf(i) + "입니다");
+            map.put(i, i + "입니다");
         }
 
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
