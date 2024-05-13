@@ -10,13 +10,9 @@ public class FileTest {
 
     private static void createFile() throws IOException {
         String folderPath = "/Users/sanghoonpark/Desktop/ddshpp/study-hta/file-test";
-        String fileName = "Test1.txt";
+        String fileName = "test.txt";
 
         File file = new File(folderPath, fileName);
-
-        boolean newFile = file.createNewFile();
-        if (!newFile) {
-            throw new RuntimeException("생성실패~!!!");
-        }
+        file.createNewFile();
     }
 }
