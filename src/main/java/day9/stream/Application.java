@@ -11,8 +11,8 @@ import java.io.OutputStreamWriter;
 
 public class Application {
     public static void main(String[] args) throws IOException {
-//        fileInputStreamTest();
-//        textFileWriteTest1();
+        fileInputStreamTest();
+        textFileWriteTest1();
         textFileWriteTest2();
     }
 
@@ -24,7 +24,7 @@ public class Application {
 
         String input = br.readLine();
         while (!input.equals("-1")) {
-            bw.write(input);
+            bw.write(input+"\n");
             input = br.readLine();
         }
 
