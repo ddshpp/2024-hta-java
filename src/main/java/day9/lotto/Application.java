@@ -10,6 +10,8 @@ public class Application {
                 new FileReader("src/main/java/day9/lotto/lotto.csv/"));
 
         int[] numbers = new int[46];
+        int count = 0;
+
         String readLine = bufferedReader.readLine();
 
         while (readLine != null) {
@@ -18,11 +20,14 @@ public class Application {
                 int number = Integer.parseInt(split[i]);
                 numbers[number]++;
             }
+            count++;
             readLine = bufferedReader.readLine();
         }
 
         for (int i = 1; i < 46; i++) {
             System.out.println(i + ": " + numbers[i]);
         }
+
+        System.out.println(count);
     }
 }
