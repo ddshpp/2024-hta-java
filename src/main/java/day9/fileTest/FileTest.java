@@ -13,7 +13,30 @@ public class FileTest {
 //        printFileSize();
 //        lastModifiedConversion();
 //        getFileList1();
-        getFileList2();
+//        getFileList2();
+        createDirectory();
+        renameDirectory();
+        deleteDirectory();
+    }
+
+    private static void renameDirectory() {
+        File file = new File("/Users/sanghoonpark/Desktop/ddshpp/test1");
+        File renameFile = new File("/Users/sanghoonpark/Desktop/ddshpp/test100");
+        file.renameTo(renameFile);
+    }
+
+    private static void deleteDirectory() {
+        File file = new File("/Users/sanghoonpark/Desktop/ddshpp/test1");
+        file.delete();
+    }
+
+    private static void createDirectory() {
+        File file = new File("/Users/sanghoonpark/Desktop/ddshpp/test1");
+        if (file.mkdir()) {
+            System.out.println("성공");
+        } else {
+            System.out.println("실패");
+        }
     }
 
     private static void getFileList2() {
@@ -21,7 +44,7 @@ public class FileTest {
         File[] files = file.listFiles();
         for (File file1 : files) {
             if (file1.isDirectory()) {
-                System.out.println("[ " + file1.getName() + " ]");
+                System.out.println("[" + file1.getName() + "]");
                 continue;
             }
             System.out.println(file1.getName());
