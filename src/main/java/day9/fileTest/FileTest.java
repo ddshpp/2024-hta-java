@@ -11,8 +11,17 @@ public class FileTest {
 //        isHidden();
 //        getCanonicalFile();
 //        printFileSize();
+//        lastModifiedConversion();
 
-        lastModifiedConversion();
+        getFileList();
+    }
+
+    private static void getFileList() {
+        File file = new File("/Users/sanghoonpark/Desktop/ddshpp");
+        File[] files = file.listFiles();
+        for (File file1 : files) {
+            System.out.println(file1.getName());
+        }
     }
 
     private static void lastModifiedConversion() {
