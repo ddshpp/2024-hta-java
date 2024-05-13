@@ -12,17 +12,23 @@ public class Application {
     }
 
     private static void fileInputStreamTest(String filePath) {
+        FileInputStream fileInputStream = null;
         try {
-            FileInputStream fileInputStream = new FileInputStream(filePath);
+            fileInputStream = new FileInputStream(filePath);
             int i = 0;
             while ((i = fileInputStream.read()) != -1) {
                 System.out.print((char) i);
             }
-            fileInputStream.close();
         } catch (FileNotFoundException e) {
             System.out.println("file not found" + e.getMessage());
         } catch (IOException e) {
             System.out.println("io exception" + e.getMessage());
+        }finally {
+            try {
+                fileInputStream.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
