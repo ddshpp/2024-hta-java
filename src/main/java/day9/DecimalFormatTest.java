@@ -3,7 +3,7 @@ package day9;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 
-public class Test {
+public class DecimalFormatTest {
     public static void main(String[] args) {
         printfTest();
         decimalFormatTest1();
