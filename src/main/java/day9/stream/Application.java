@@ -1,21 +1,39 @@
 package day9.stream;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class Application {
     public static void main(String[] args) throws IOException {
-        String filePath = "/Users/sanghoonpark/Desktop/ddshpp/study-hta/java1/java-1/src/main/java/day9/stream/test.txt";
-
-//        fileInputStreamTest(filePath);
-
-        writeMessageTest();
+//        fileInputStreamTest();
+//        textFileWriteTest1();
+        textFileWriteTest2();
     }
 
-    private static void writeMessageTest() {
-        String filePath = "/Users/sanghoonpark/Desktop/ddshpp/study-hta/java1/java-1/src/main/java/day9/stream/test2.txt";
+    private static void textFileWriteTest2() throws IOException {
+        String filePath = "src/main/java/day9/stream/test3.txt";
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(
+                new OutputStreamWriter(new FileOutputStream(filePath)));
+
+        String input = br.readLine();
+        while (!input.equals("-1")) {
+            bw.write(input);
+            input = br.readLine();
+        }
+
+        br.close();
+        bw.close();
+    }
+
+    private static void textFileWriteTest1() {
+        String filePath = "src/main/java/day9/stream/test2.txt";
 
         try {
             FileOutputStream outputStream = new FileOutputStream(filePath);
@@ -26,7 +44,8 @@ public class Application {
         }
     }
 
-    private static void fileInputStreamTest(String filePath) {
+    private static void fileInputStreamTest() {
+        String filePath = "src/main/java/day9/stream/test.txt";
         FileInputStream fileInputStream = null;
 
         try {
