@@ -1,5 +1,6 @@
 package day9.fileTest;
 
+import java.io.File;
 import java.io.IOException;
 
 public class FileTest {
@@ -11,7 +12,7 @@ public class FileTest {
         String folderPath = "/Users/sanghoonpark/Desktop/ddshpp/study-hta/file-test";
         String fileName = "Test1.txt";
 
-        java.io.File file = new java.io.File(folderPath, fileName);
+        File file = new File(folderPath, fileName);
 
         boolean newFile = file.createNewFile();
         if (!newFile) {
