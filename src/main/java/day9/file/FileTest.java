@@ -1,4 +1,4 @@
-package day9.fileTest;
+package day9.file;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,13 +7,13 @@ import java.time.LocalDateTime;
 
 public class FileTest {
     public static void main(String[] args) throws IOException {
-//        createFile();
-//        isHidden();
-//        getCanonicalFile();
-//        printFileSize();
-//        lastModifiedConversion();
-//        getFileList1();
-//        getFileList2();
+        createFile();
+        isHidden();
+        getCanonicalFile();
+        printFileSize();
+        lastModifiedConversion();
+        getFileList1();
+        getFileList2();
         createDirectory();
         renameDirectory();
         deleteDirectory();

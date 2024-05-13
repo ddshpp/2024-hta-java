@@ -1,4 +1,4 @@
-package day9.formatTest;
+package day9.format;
 
 import java.text.DecimalFormat;
 import java.text.ParseException;

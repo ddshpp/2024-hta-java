@@ -1,4 +1,4 @@
-package day9.formatTest;
+package day9.format;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
