@@ -12,11 +12,23 @@ public class FileTest {
 //        getCanonicalFile();
 //        printFileSize();
 //        lastModifiedConversion();
-
-        getFileList();
+//        getFileList1();
+        getFileList2();
     }
 
-    private static void getFileList() {
+    private static void getFileList2() {
+        File file = new File("/Users/sanghoonpark/Desktop/ddshpp");
+        File[] files = file.listFiles();
+        for (File file1 : files) {
+            if (file1.isDirectory()) {
+                System.out.println("[ " + file1.getName() + " ]");
+                continue;
+            }
+            System.out.println(file1.getName());
+        }
+    }
+
+    private static void getFileList1() {
         File file = new File("/Users/sanghoonpark/Desktop/ddshpp");
         File[] files = file.listFiles();
         for (File file1 : files) {
