@@ -11,11 +11,12 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class Application implements Serializable {
     public static void main(String[] args) {
-//        dataOutputStreamTest();
-//        objectIOStreamTest();
+        dataOutputStreamTest();
+        objectIOStreamTest();
         objectIOStreamTes2();
     }
 
