@@ -15,62 +15,72 @@ public class Application {
     static String FILE_PATH = "./src/main/java/day10/address/zipcode_seoul_utf8_type2.csv";
 
     public static void main(String[] args) throws IOException {
-        addressSearch();
+        addressSearch(inputAddress());
     }
 
-    private static void addressSearch() throws IOException {
-        System.out.println("주소를 입력해주세요");
-        String input = validateInput();
-
+    private static void addressSearch(String input) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(FILE_PATH));
-        String readLine = br.readLine();
-
         Set<String> addressSet = new HashSet<>();
-//        countCheck(readLine, addressSet, br);
 
+        searchAddress(br, input, addressSet);
+        printResult(addressSet);
+        continueCheck();
+    }
+
+    private static void continueCheck() throws IOException {
+        while (true) {
+            System.out.println("주소를 입력해주세요 (종료하시려면 q) ");
+            String input = scanner.nextLine();
+            if (input.equals("q")) {
+                System.out.println("종료");
+                System.exit(0);
+            }
+            if (validateInput(input)) {
+                addressSearch(input);
+            }
+        }
+    }
+
+    private static void searchAddress(BufferedReader br, String input, Set<String> addressSet)
+            throws IOException {
+
+        String readLine = br.readLine();
         while (readLine != null) {
             String address = readLine.replaceAll(",", " ");
-            String[] addressSplits = readLine.split(",");
 
-            if (addressSplits[2].contains(input)) {
+            if (readLine.contains(input)) {
                 addressSet.add(address);
             }
-            if (addressSplits[3].contains(input)) {
-                addressSet.add(address);
-            }
-
             readLine = br.readLine();
         }
+    }
 
+    private static void printResult(Set<String> addressSet) {
         List<String> addressList = new ArrayList<>(addressSet);
         Collections.sort(addressList);
 
         for (String address : addressList) {
             System.out.println(address);
         }
+        System.out.println();
     }
 
-    private static void countCheck(String readLine, Set<String> addressSet, BufferedReader br)
-            throws IOException {
-        int count = 0;
-
-        while (readLine != null) {
-            addressSet.add(readLine);
-            count++;
-            readLine = br.readLine();
-        }
-
-        System.out.println(addressSet.size());
-        System.out.println(count);
-    }
-
-    private static String validateInput() {
-        String input = scanner.nextLine().strip();
-
-        while (input.length() < 2) {
+    private static boolean validateInput(String inputAddress) {
+        if (inputAddress.length() < 2) {
             System.out.println("다시 입력해주세요");
-            input = scanner.nextLine();
+            return false;
         }
-        return input;
+        return true;
+    }
+
+    private static String inputAddress() {
+        System.out.println("주소를 입력해주세요");
+
+        while (true) {
+            String input = scanner.nextLine();
+            if (validateInput(input)) {
+                return input.strip();
+            }
+        }
     }
 }
