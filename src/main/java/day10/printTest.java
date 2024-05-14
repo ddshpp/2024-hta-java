@@ -10,6 +10,21 @@ public class printTest {
         inputStreamTest();
         inputStreamReaderTest();
         bufferedReaderTest();
+        bufferedReaderTest2();
+    }
+
+    private static void bufferedReaderTest2() {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(isr);
+
+        System.out.println("사용중인 인코딩 : " + isr.getEncoding());
+        System.out.println("입력");
+
+        try {
+            System.out.println(br.readLine());
+        } catch (IOException e) {
+            throw new RuntimeException("예외발생");
+        }
     }
 
     private static void bufferedReaderTest() {
