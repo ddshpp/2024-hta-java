@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Application {
+public class AddressSearch {
     static Scanner scanner = new Scanner(System.in);
     static String FILE_PATH = "./src/main/java/day10/address/zipcode_seoul_utf8_type2.csv";
 

@@ -15,7 +15,7 @@ import java.util.Set;
 public class SaveAddress {
     static Scanner scanner = new Scanner(System.in);
     static String FILE_PATH = "src/main/java/day10/address/zipcode_seoul_utf8_type2.csv";
-    static String SAVE_FILE_PATH = "src/main/java/day10/address/result.txt";
+    static String SAVE_FILE_PATH = "src/main/java/day10/address/SaveAddressResult.txt";
 
     public static void main(String[] args) throws IOException {
         List<String> addressList = searchResults(inputAddress());
