@@ -65,7 +65,7 @@ public class Application {
     }
 
     private static String validateInput() {
-        String input = scanner.nextLine();
+        String input = scanner.nextLine().strip();
 
         while (input.length() < 2) {
             System.out.println("다시 입력해주세요");
