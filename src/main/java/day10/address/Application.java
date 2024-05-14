@@ -26,7 +26,6 @@ public class Application {
         String readLine = br.readLine();
 
         Set<String> addressSet = new HashSet<>();
-
 //        countCheck(readLine, addressSet, br);
 
         while (readLine != null) {
