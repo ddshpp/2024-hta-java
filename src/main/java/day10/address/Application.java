@@ -28,8 +28,9 @@ public class Application {
     }
 
     private static void continueCheck() throws IOException {
+        System.out.println("주소를 입력해주세요 (종료하시려면 q) ");
+
         while (true) {
-            System.out.println("주소를 입력해주세요 (종료하시려면 q) ");
             String input = scanner.nextLine();
             if (input.equals("q")) {
                 System.out.println("종료");
