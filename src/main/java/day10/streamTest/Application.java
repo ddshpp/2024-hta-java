@@ -10,6 +10,22 @@ public class Application {
     public static void main(String[] args) {
 //        fileInputStreamTest();
         fileInputStreamTest2();
+        fileInputStreamTest3();
+    }
+
+    private static void fileInputStreamTest3() {
+        String filePath = "src/main/java/day10/streamTest/test.txt";
+        File file = new File(filePath);
+
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+            bw.append("asdasd");
+            bw.append("qweqwe");
+            System.out.println("출력완료");
+            bw.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static void fileInputStreamTest2() {
@@ -18,8 +34,8 @@ public class Application {
 
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-            bw.write("aaabbb");
-            bw.write("123123");
+            bw.write("asdasd");
+            bw.write("qweqwe");
             System.out.println("출력완료");
             bw.close();
         } catch (IOException e) {
