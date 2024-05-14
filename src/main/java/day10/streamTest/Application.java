@@ -1,10 +1,30 @@
 package day10.streamTest;
 
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Application {
     public static void main(String[] args) {
-        fileInputStreamTest();
+//        fileInputStreamTest();
+        fileInputStreamTest2();
+    }
+
+    private static void fileInputStreamTest2() {
+        String filePath = "src/main/java/day10/streamTest/test.txt";
+        File file = new File(filePath);
+
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+            bw.write("aaabbb");
+            bw.write("123123");
+            System.out.println("출력완료");
+            bw.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static void fileInputStreamTest() {
