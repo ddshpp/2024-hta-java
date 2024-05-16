@@ -1,4 +1,4 @@
-package day11.excel;
+package day11_db.excel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,10 +23,10 @@ public class Application {
 
     private static void sheetRenameTest() throws IOException {
         FileOutputStream fos = new FileOutputStream(new File(test1Path));
-        XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("create1");
-
-        workbook.write(fos);
+        try (XSSFWorkbook workbook = new XSSFWorkbook()) {
+            workbook.createSheet("create1");
+            workbook.write(fos);
+        }
     }
 
     private static void printXlsxTest() throws IOException {
