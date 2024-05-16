@@ -11,12 +11,12 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Application {
-    static String test1Path = "src/main/java/day11/excel/test1.xlsx";
-    static String test2Path = "src/main/java/day11/excel/test2.xls";
+    static String test1Path = "src/main/java/day11/excel/files/test1.xlsx";
+    static String test2Path = "src/main/java/day11/excel/files/test2.xls";
 
     public static void main(String[] args) throws Exception {
 //        getCellXlsFile();
-        printXlsxTest();
+//        printXlsxTest();
     }
 
     private static void printXlsxTest() throws IOException {
