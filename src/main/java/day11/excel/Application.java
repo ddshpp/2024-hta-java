@@ -2,6 +2,7 @@ package day11.excel;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -15,8 +16,17 @@ public class Application {
     static String test2Path = "src/main/java/day11/excel/files/test2.xls";
 
     public static void main(String[] args) throws Exception {
-//        getCellXlsFile();
-//        printXlsxTest();
+        getCellXlsFile();
+        printXlsxTest();
+        sheetRenameTest();
+    }
+
+    private static void sheetRenameTest() throws IOException {
+        FileOutputStream fos = new FileOutputStream(new File(test1Path));
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet = workbook.createSheet("create1");
+
+        workbook.write(fos);
     }
 
     private static void printXlsxTest() throws IOException {
